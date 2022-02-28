@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phone Market</title>
+    <title>Phone Bazar</title>
     <!-- external css link-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- bootstrap link -->
@@ -17,9 +17,9 @@
   </head>
   <body>
     <header>
-      <h1 id="heading" class="text-center py-2">Phone Market</h1>
+      <h1 id="heading" class="text-center py-2">Phone Bazar</h1>
     </header>
-    <main>
+    <main class="container">
       <div class="input-group mb-3 w-50 mx-auto">
         <input
           id="search-field"
@@ -29,10 +29,18 @@
           aria-label="Enter Phone Name"
           aria-describedby="basic-addon2"
         />
-        <button id="search-button" class="input-group-text" id="basic-addon2">
+        <button
+          onclick="searchPhone()"
+          class="input-group-text"
+          id="basic-addon2"
+        >
           Search
         </button>
       </div>
+      <div
+        id="search-result"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"
+      ></div>
     </main>
 
     <!-- javascript for bootstrap -->
