@@ -1,4 +1,14 @@
+body {
+  background-color: rgba(128, 128, 128, 0.651);
+}
+header {
+  background-color: aquamarine;
+  margin-bottom: 10px;
+}
 #heading {
   color: maroon;
-  background-color: aquamarine;
+}
+.logo {
+  height: 100px;
+  width: 100px;
 }
