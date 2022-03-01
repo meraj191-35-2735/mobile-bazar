@@ -4,6 +4,8 @@ const searchPhone = () => {
   const searchText = searchField.value;
   // clear value
   searchField.value = "";
+  const phoneDetails = document.getElementById("phone-details");
+  phoneDetails.textContent = "";
 
   const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
   fetch(url)
